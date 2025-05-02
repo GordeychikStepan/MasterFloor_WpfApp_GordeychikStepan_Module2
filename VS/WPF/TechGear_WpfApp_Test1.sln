@@ -5,7 +5,7 @@ VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechGear_WpfApp_Test1", "TechGear_WpfApp_Test1.csproj", "{73AB19A6-91BC-4846-80E8-4FE9E4073A50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject2", "..\TestProject2\TestProject2.csproj", "{51AB1C92-7B76-4012-819B-B9464BB58A28}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject2", "..\TEST\TestProject2.csproj", "{2F31ED4E-644C-F227-E951-49FDB49AD25F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{73AB19A6-91BC-4846-80E8-4FE9E4073A50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73AB19A6-91BC-4846-80E8-4FE9E4073A50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73AB19A6-91BC-4846-80E8-4FE9E4073A50}.Release|Any CPU.Build.0 = Release|Any CPU
-		{51AB1C92-7B76-4012-819B-B9464BB58A28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{51AB1C92-7B76-4012-819B-B9464BB58A28}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{51AB1C92-7B76-4012-819B-B9464BB58A28}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{51AB1C92-7B76-4012-819B-B9464BB58A28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F31ED4E-644C-F227-E951-49FDB49AD25F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F31ED4E-644C-F227-E951-49FDB49AD25F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F31ED4E-644C-F227-E951-49FDB49AD25F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F31ED4E-644C-F227-E951-49FDB49AD25F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
