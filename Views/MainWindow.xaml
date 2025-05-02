@@ -1,0 +1,76 @@
+﻿<Window x:Class="TechGear_WpfApp_Test1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TechGear_WpfApp_Test1"
+        mc:Ignorable="d"
+        MouseDown="Window_MouseDown"
+        FontFamily="Segoe UI"
+        Title="Мастер пол - Список партнеров" 
+        WindowStartupLocation="CenterScreen"
+        Height="450" Width="800"
+        MinHeight="450" MinWidth="600">
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Image Source="/Resources/Мастер пол.png"
+               Margin="10"/>
+
+        <TextBlock Text="Список партнеров"
+                   Grid.Column="1"
+                   VerticalAlignment="Center"
+                   FontSize="24"/>
+
+        <ListView Name="Partners_ListView"
+                  Grid.Row="1" Grid.ColumnSpan="2"
+                  HorizontalContentAlignment="Stretch">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+
+                    <Border BorderBrush="Gray"
+                            BorderThickness="1"
+                            Background="#F4E8D3"
+                            Padding="10"
+                            Margin="10,5">
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <StackPanel Margin="10,0,0,2">
+                                <TextBlock Text="{Binding PartnerTypeAndName}" FontSize="16"/>
+                                <TextBlock Text="{Binding PartnerCeo}" />
+                                <TextBlock Text="{Binding PartnerPhone}" />
+                                <TextBlock Text="{Binding PartnerRating}" />
+                            </StackPanel>
+
+                            <TextBlock Text="{Binding Percent}"
+                                       FontSize="16"
+                                       Margin="40,0"
+                                       Grid.Column="1"/>
+                        </Grid>
+
+                        
+
+                    </Border>
+                    
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            
+        </ListView>
+    </Grid>
+</Window>
